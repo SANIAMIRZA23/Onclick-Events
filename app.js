@@ -21,6 +21,7 @@ function averageCalculator() {
   averageCalculator()
 
 // palindrome checker:
+
 function palindromeChecker() {
     var word = document.getElementById("word").value
     var isPalindrome = false;

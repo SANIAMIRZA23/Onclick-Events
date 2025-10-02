@@ -19,3 +19,25 @@ function averageCalculator() {
     document.getElementById("result").innerHTML= resultMessage;
   }
   averageCalculator()
+
+// palindrome checker:
+function palindromeChecker() {
+    var word = document.getElementById("word").value
+    var isPalindrome = false;
+
+    for (var i = 0; i < (word.length - 1) /2; i++) {
+        var startingLetters = word[i]
+        var endingLetters = word.charAt(word.length-1-i);
+        if (startingLetters===endingLetters) {
+            isPalindrome = true;
+        }
+ var result = "";
+    }
+    if (isPalindrome){
+        result+="Its a palindrome!"
+    }else{
+        result+="Its  not a palindrome!"
+    }
+document.getElementById("result").innerHTML = result;
+document.getElementById("word").value = "";
+}
